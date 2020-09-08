@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Satir på krisinformation.se:s krashande crowdsourcing">
+
+  <title>Kunde du rapportera huruvida du hörde Hesa Fredrik?</title>
+
+  <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- import the webpage's client-side javascript file -->
+  <script src="/client.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Kunde du rapportera huruvida du <a href="https://gisapp.msb.se/vmaform/" target="_blank" rel="noopener">hörde Hesa
+        Fredik</a>?
+    </h1>
+  </header>
+
+  <main>
+    <form>
+      <h2>1. Ange information</h2>
+      <fieldset>
+        <legend>
+          Kunde du skicka in ett svar?
+        </legend>
+        <label><input name="response" type="radio" value="0" required />Ja</label>
+        <label><input name="response" type="radio" value="1" required />Nej</label>
+      </fieldset>
+
+      <h2>2. Skicka in</h2>
+      <p>
+        Klicka på knappen för att skicka in bidrag.
+      </p>
+      <button class="btn btn-primary" type="submit" id="submit">Skicka in bidrag</button>
+    </form>
+
+    <hr />
+
+    <label for="report">Antal som kunde rapportera</label>
+    <progress id="report" value="0" max="100"></progress>
+    <div id="status">
+      &ndash;/&ndash; (0%)
+    </div>
+  </main>
+
+  <footer>
+    Made by <a href="https://twitter.com/swantzter">@swantzter</a>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "hesa-fredrik",
+  "version": "1.0.0-alpha.1",
+  "description": "Satir på krisinformation.se:s krashande crowdsourcing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^4.1.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/swantzter/hesa-fredrik"
+  },
+  "license": "MIT"
+}
