@@ -16,7 +16,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: docker.pkg.github.com
-          repository: swantzter/hesa-fredrik/hesa-fredrik
+          password: ${{ secrets.CR_PAT }}
+          registry: ghcr.io
+          repository: swantzter/hesa-fredrik
           tag_with_ref: true
